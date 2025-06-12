@@ -1,4 +1,4 @@
-// Configuração do Firebase
+// Configuração do Firebase, onde o código faz contato com o database
 const firebaseConfig = {
   apiKey: "AIzaSyBrhqHIyFITVqM5D15qtOt-UbEKcZJzdQc",
   authDomain: "ecotrack-ae36f.firebaseapp.com",
@@ -78,7 +78,7 @@ function enviarAvaliacao(dados) {
       alert("Erro ao enviar avaliação.");
     });
 }
-
+//Funcção reutilizável do "Avaliação feita com sucesso"
 function mostrarToast(mensagem) {
   var toast = document.getElementById("toast");
   toast.innerText = mensagem;
